@@ -1,4 +1,4 @@
-<button id="{{id}}">
+<button id="{{id}}" ng-disabled="loading">
   <div ng-transclude ng-show="!loading" style="display:block; position:absolute; top:50%; left:50%; transform: translate( -50%, -50% );"></div>
   <div ng-show="loading && text" style="display:block; position:absolute; top:50%; left:50%; transform: translate( -50%, -50% );">
     {{text}}{{'.'.repeat(count)}}

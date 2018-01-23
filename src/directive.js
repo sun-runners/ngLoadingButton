@@ -18,7 +18,7 @@
           scope.$watch('loading', function(){
             if(scope.loading){
               interval_time = $interval(function(){
-                if(scope.count>=6) scope.count = 1;
+                if(scope.count>=3) scope.count = 1;
                 else scope.count += 1;
               }, 300);
             } else{
