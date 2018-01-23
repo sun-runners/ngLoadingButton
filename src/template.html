@@ -1,5 +1,5 @@
 <button>
-  <div ng-transclude ng-show="!loading"></div>
+  <div ng-transclude ng-show="!loading" style="display:block; position:absolute; top:50%; left:50%; transform: translate( -50%, -50% );"></div>
   <div ng-show="loading" style="display:block; position:absolute; top:50%; left:50%; transform: translate( -50%, -50% );">
     <div class="sk-rotating-plane" ng-if="mode=='rotating-plane'"></div>
     <div class="sk-double-bounce" ng-if="mode=='double-bounce'">
