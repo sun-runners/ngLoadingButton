@@ -1,33 +1,37 @@
-<button>
+<button id="{{id}}">
   <div ng-transclude ng-show="!loading" style="display:block; position:absolute; top:50%; left:50%; transform: translate( -50%, -50% );"></div>
-  <div ng-show="loading" style="display:block; position:absolute; float:none; top:50%; left:50%; transform: translate( -50%, -50% );">
-    <div class="sk-rotating-plane" ng-if="mode=='rotating-plane'"></div>
-    <div class="sk-double-bounce" ng-if="mode=='double-bounce'">
-      <div class="sk-child sk-double-bounce1"></div>
-      <div class="sk-child sk-double-bounce2"></div>
+  <div ng-show="loading && text" style="display:block; position:absolute; top:50%; left:50%; transform: translate( -50%, -50% );">
+    {{text}}{{'.'.repeat(count)}}
+  </div>
+  <div ng-show="loading && !text" style="display:block; position:absolute; float:none; top:50%; left:50%; transform: translate( -50%, -50% );"
+  ng-switch on="mode">
+    <div class="sk-rotating-plane" ng-switch-when="rotating-plane" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+    <div class="sk-double-bounce" ng-switch-when="double-bounce">
+      <div class="sk-child sk-double-bounce1" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+      <div class="sk-child sk-double-bounce2" ng-style="{'background-color':'{{color||'black'}}'}"></div>
     </div>
-    <div class="sk-wave" ng-if="mode=='wave'">
-      <div class="sk-rect sk-rect1"></div>
-      <div class="sk-rect sk-rect2"></div>
-      <div class="sk-rect sk-rect3"></div>
-      <div class="sk-rect sk-rect4"></div>
-      <div class="sk-rect sk-rect5"></div>
+    <div class="sk-wave" ng-switch-when="wave">
+      <div class="sk-rect sk-rect1" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+      <div class="sk-rect sk-rect2" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+      <div class="sk-rect sk-rect3" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+      <div class="sk-rect sk-rect4" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+      <div class="sk-rect sk-rect5" ng-style="{'background-color':'{{color||'black'}}'}"></div>
     </div>
-    <div class="sk-wandering-cubes" ng-if="mode=='wandering-cubes'">
-      <div class="sk-cube sk-cube1"></div>
-      <div class="sk-cube sk-cube2"></div>
+    <div class="sk-wandering-cubes" ng-switch-when="wandering-cubes">
+      <div class="sk-cube sk-cube1" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+      <div class="sk-cube sk-cube2" ng-style="{'background-color':'{{color||'black'}}'}"></div>
     </div>
-    <div class="sk-spinner sk-spinner-pulse" ng-if="mode=='spinner-pulse'"></div>
-    <div class="sk-chasing-dots" ng-if="mode=='chasing-dots'">
-      <div class="sk-child sk-dot1"></div>
-      <div class="sk-child sk-dot2"></div>
+    <div class="sk-spinner sk-spinner-pulse" ng-switch-when="spinner-pulse" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+    <div class="sk-chasing-dots" ng-switch-when="chasing-dots'">
+      <div class="sk-child sk-dot1" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+      <div class="sk-child sk-dot2" ng-style="{'background-color':'{{color||'black'}}'}"></div>
     </div>
-    <div class="sk-three-bounce" ng-if="mode=='three-bounce'">
-      <div class="sk-child sk-bounce1"></div>
-      <div class="sk-child sk-bounce2"></div>
-      <div class="sk-child sk-bounce3"></div>
+    <div class="sk-three-bounce" ng-switch-when="three-bounce">
+      <div class="sk-child sk-bounce1" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+      <div class="sk-child sk-bounce2" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+      <div class="sk-child sk-bounce3" ng-style="{'background-color':'{{color||'black'}}'}"></div>
     </div>
-    <div class="sk-circle" ng-if="mode=='circle'">
+    <div class="sk-circle" ng-switch-when="circle">
       <div class="sk-circle1 sk-child"></div>
       <div class="sk-circle2 sk-child"></div>
       <div class="sk-circle3 sk-child"></div>
@@ -41,18 +45,19 @@
       <div class="sk-circle11 sk-child"></div>
       <div class="sk-circle12 sk-child"></div>
     </div>
-    <div class="sk-cube-grid" ng-if="mode=='cube-grid'">
-      <div class="sk-cube sk-cube1"></div>
-      <div class="sk-cube sk-cube2"></div>
-      <div class="sk-cube sk-cube3"></div>
-      <div class="sk-cube sk-cube4"></div>
-      <div class="sk-cube sk-cube5"></div>
-      <div class="sk-cube sk-cube6"></div>
-      <div class="sk-cube sk-cube7"></div>
-      <div class="sk-cube sk-cube8"></div>
-      <div class="sk-cube sk-cube9"></div>
+    <style> #{{id}} div.sk-circle div.sk-child:before { background-color: {{color||'black'}}; } </style>
+    <div class="sk-cube-grid" ng-switch-when="cube-grid">
+      <div class="sk-cube sk-cube1" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+      <div class="sk-cube sk-cube2" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+      <div class="sk-cube sk-cube3" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+      <div class="sk-cube sk-cube4" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+      <div class="sk-cube sk-cube5" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+      <div class="sk-cube sk-cube6" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+      <div class="sk-cube sk-cube7" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+      <div class="sk-cube sk-cube8" ng-style="{'background-color':'{{color||'black'}}'}"></div>
+      <div class="sk-cube sk-cube9" ng-style="{'background-color':'{{color||'black'}}'}"></div>
     </div>
-    <div class="sk-fading-circle" ng-if="mode=='fading-circle'">
+    <div class="sk-fading-circle" ng-switch-when="fading-circle">
       <div class="sk-circle1 sk-circle" style="margin: 0;"></div>
       <div class="sk-circle2 sk-circle" style="margin: 0;"></div>
       <div class="sk-circle3 sk-circle" style="margin: 0;"></div>
@@ -66,11 +71,13 @@
       <div class="sk-circle11 sk-circle" style="margin: 0;"></div>
       <div class="sk-circle12 sk-circle" style="margin: 0;"></div>
     </div>
-    <div class="sk-folding-cube" ng-if="mode=='folding-cube'">
+    <style> #{{id}} div.sk-fading-circle div.sk-circle:before { background-color: {{color||'black'}}; } </style>
+    <div class="sk-folding-cube" ng-switch-when="folding-cube">
       <div class="sk-cube1 sk-cube"></div>
       <div class="sk-cube2 sk-cube"></div>
       <div class="sk-cube4 sk-cube"></div>
       <div class="sk-cube3 sk-cube"></div>
     </div>
+    <style> #{{id}} div.sk-folding-cube div.sk-cube:before { background-color: {{color||'black'}}; } </style>
   </div>
 </button>
