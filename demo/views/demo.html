@@ -1,6 +1,8 @@
 <div class="w-100 h-100">
-  <div full-page class="section" options="{ scrollingSpeed: 500, controlArrows: false }">
-  	<div class="w-100 h-100 slide" ng-repeat="mode in modes">
+  <canvas id="granim-canvas" class="w-100 h-100"></canvas>
+
+  <div full-page class="section f-l" options="{ scrollingSpeed: 500, controlArrows: false }">
+  	<div class="w-100 h-100 slide z-1" ng-repeat="mode in modes">
       <div class="w-60 xw-300px cen">
         <div class="w-100">
           <ng-loading-button
@@ -15,15 +17,15 @@
         </div>
       </div>
     </div>
+    <button class="p-a w-20 h-60px cen-y c-we l-0 z-2" ng-click="movePrev();">
+      <div class="p-r w-100 h-100">
+        <i class="ion-arrow-left-b f-30px cen"></i>
+      </div>
+    </button>
+    <button class="p-a w-20 h-60px cen-y c-we r-0 z-2" ng-click="moveNext();">
+      <div class="p-r w-100 h-100">
+        <i class="ion-arrow-right-b f-30px cen"></i>
+      </div>
+    </button>
   </div>
-  <button class="p-a w-20 h-60px cen-y c-we l-0" ng-click="movePrev();">
-    <div class="p-r w-100 h-100">
-      <i class="ion-arrow-left-b f-30px cen"></i>
-    </div>
-  </button>
-  <button class="p-a w-20 h-60px cen-y c-we r-0" ng-click="moveNext();">
-    <div class="p-r w-100 h-100">
-      <i class="ion-arrow-right-b f-30px cen"></i>
-    </div>
-  </button>
 </div>

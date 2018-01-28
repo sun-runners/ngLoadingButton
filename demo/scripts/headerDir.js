@@ -12,6 +12,7 @@ angular.module("app")
 				timeline_logo.add({
 				  targets: '#bar',
 				  height: '+=50%',
+				  delay: 1500,
 				  duration: 1000,
 					easing: 'easeInOutQuad'
 				}).add({

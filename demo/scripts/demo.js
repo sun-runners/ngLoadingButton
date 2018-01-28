@@ -7,6 +7,7 @@ angular.module('app')
 		$scope.movePrev = function(){
 			$.fn.fullpage.moveSlideLeft();
 		};
+
 		$scope.moveNext = function(){
 			$.fn.fullpage.moveSlideRight();
 		};
@@ -43,6 +44,23 @@ angular.module('app')
 		// Watch Function Section
 		$scope.$watch('mode', function(){
 			$scope.loading = false;
+		});
+
+		var granimInstance = new Granim({
+		   element: '#granim-canvas',
+			 direction: 'radial',
+		   name: 'granim',
+		   opacity: [1, 1],
+		   states : {
+					"default-state": {
+						gradients: [
+							['#FFD54F', '#FFC107'],
+							['#FFA000', '#FF6F00'],
+							['#FF6F00', '#FFA000'],
+							['#FFC107', '#FFD54F']
+						]
+					}
+		   }
 		});
 
 });
