@@ -12,8 +12,8 @@ angular.module("app")
 				timeline_logo.add({
 				  targets: '#bar',
 				  height: '+=50%',
-				  delay: 1500,
-				  duration: 1000,
+				  delay: 500,
+				  duration: 500,
 					easing: 'easeInOutQuad'
 				}).add({
 				  targets: '#text',
@@ -23,13 +23,13 @@ angular.module("app")
 				});
 				timeline_logo.play();
 
-				// var timeout_toggle = $timeout(function () {
-				// 	timeline_logo.played = true;
-				// 	scope.toggle();
-				// }, 5000);
+				var timeout_toggle = $timeout(function () {
+					timeline_logo.played = true;
+					scope.toggle();
+				}, 5000);
 
 				scope.toggle = function(){
-					// if(timeout_toggle) $timeout.cancel(timeout_toggle);
+					if(timeout_toggle) $timeout.cancel(timeout_toggle);
 					timeline_logo.play();
 					if(timeline_logo.played) timeline_logo.reverse();
 					timeline_logo.played = true;

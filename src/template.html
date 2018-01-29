@@ -1,6 +1,8 @@
 <button id="{{id}}" ng-disabled="loading">
   <div style="width:100%; height:100%;">
-    <div ng-transclude ng-show="!loading" style="display:block; position:absolute; top:50%; left:50%; transform: translate( -50%, -50% );"></div>
+    <div ng-show="!loading" style="display:block; position:absolute; top:50%; left:50%; transform: translate( -50%, -50% );">
+      <div ng-transclude></div>
+    </div>
     <div ng-show="loading && text" style="display:block; position:absolute; top:50%; left:50%; transform: translate( -50%, -50% );">
       {{text}}{{'.'.repeat(count)}}
     </div>
