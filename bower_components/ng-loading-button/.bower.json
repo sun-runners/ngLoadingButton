@@ -1,6 +1,5 @@
 {
   "name": "ng-loading-button",
-  "version": "1.0.3",
   "homepage": "https://github.com/KimSunWook/ngLoadingButton",
   "main": "ngLoadingButton.js",
   "authors": [
@@ -43,12 +42,21 @@
     "animate.css": "^3.5.2",
     "ng-lodash": "^0.5.0",
     "cssist": "*",
-    "animejs": "^2.2.0",
-    "ng-loading-button": "ngLoadingButton#*"
+    "animejs": "^2.2.0"
   },
   "resolutions": {
     "angular": "~1.5.8",
     "angular-animate": "~1.5.8",
     "angular-aria": "~1.5.8"
-  }
+  },
+  "_release": "30ceff6159",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "30ceff61591222af95c0dd18c807135cf31b5001"
+  },
+  "_source": "https://github.com/KimSunWook/ngLoadingButton.git",
+  "_target": "*",
+  "_originalSource": "ngLoadingButton",
+  "_direct": true
 }
