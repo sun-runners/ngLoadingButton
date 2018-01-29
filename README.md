@@ -7,7 +7,7 @@ A library that animates buttons when loading
 
 DEMO
 -------
-https://kimsunwook.github.io/ngLoadingButton/index
+https://kimsunwook.github.io/ngLoadingButton
 
 <br/>
 
