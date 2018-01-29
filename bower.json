@@ -46,6 +46,8 @@
     "animejs": "^2.2.0"
   },
   "resolutions": {
-    "angular": "~1.5.8"
+    "angular": "~1.5.8",
+    "angular-animate": "~1.5.8",
+    "angular-aria": "~1.5.8"
   }
 }

@@ -23,7 +23,7 @@ bower install ngLoadingButton --save
 USAGE
 -----
 
-Make sure you include the module in your application config
+Make sure you include the module 'ngLoadingButton' in your application config
 
 ```
 var app = angular.module('myApp', [
