@@ -3,13 +3,13 @@ ngLoadingButton
 
 A library that animates buttons when loading
 
-
+<br/>
 
 DEMO
 -------
 https://kimsunwook.github.io/ngLoadingButton/index
 
-
+<br/>
 
 INSTALL
 -------
@@ -18,7 +18,7 @@ INSTALL
 bower install ngLoadingButton --save
 ```
 
-
+<br/>
 
 USAGE
 -----
@@ -70,6 +70,6 @@ angular.module('app', ['ngLoadingButton']).run(function($rootScope, $timeout){
 });
 ```
 
-
+<br/>
 
 Easy!
