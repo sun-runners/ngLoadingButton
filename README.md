@@ -20,6 +20,28 @@ bower install ngLoadingButton --save
 
 <br/>
 
+Quick start
+-------
+Copy-paste the stylesheet <script> into your <body>.
+
+```
+<script src=".bower_components/ngLoadingButton/ngLoadingButton.js"></script>
+```
+or
+```
+<script src=".bower_components/ngLoadingButton/ngLoadingButton.min.js"></script>
+```
+or
+```
+<script src="https://raw.githubusercontent.com/KimSunWook/ngLoadingButton/master/ngLoadingButton.js"></script>
+```
+or
+```
+<script src="https://raw.githubusercontent.com/KimSunWook/ngLoadingButton/master/ngLoadingButton.min.js"></script>
+```
+
+<br/>
+
 USAGE
 -----
 
