@@ -25,11 +25,11 @@ Quick start
 Copy-paste the stylesheet <script> into your <body>.
 
 ```
-<script src=".bower_components/ngLoadingButton/ngLoadingButton.js"></script>
+<script src=".bower_components/ng-loading-button/ngLoadingButton.js"></script>
 ```
 or
 ```
-<script src=".bower_components/ngLoadingButton/ngLoadingButton.min.js"></script>
+<script src=".bower_components/ng-loading-button/ngLoadingButton.min.js"></script>
 ```
 or
 ```
