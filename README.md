@@ -22,8 +22,14 @@ bower install ngLoadingButton --save
 
 Quick start
 -------
-Copy-paste the stylesheet <script> into your <body>.
+Copy-paste the stylesheet ```<script>``` into your ```<body>``` and ```<link>``` into your ```<head>```.
 
+Spinkit.css
+```
+<link rel="stylesheet" href="./bower_components/Spinkit/css/spinkit.css">
+```
+
+ngLoadingButton.js
 ```
 <script src=".bower_components/ng-loading-button/ngLoadingButton.js"></script>
 ```
