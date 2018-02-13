@@ -24,12 +24,14 @@ Quick start
 -------
 Copy-paste the stylesheet ```<script>``` into your ```<body>``` and ```<link>``` into your ```<head>```.
 
-Spinkit.css
+### Spinkit.css
+
 ```
 <link rel="stylesheet" href="./bower_components/Spinkit/css/spinkit.css">
 ```
 
-ngLoadingButton.js
+### ngLoadingButton.js
+
 ```
 <script src=".bower_components/ng-loading-button/ngLoadingButton.js"></script>
 ```
