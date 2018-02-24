@@ -45,10 +45,5 @@
     "cssist": "*",
     "animejs": "^2.2.0",
     "ng-loading-button": "ngLoadingButton#*"
-  },
-  "resolutions": {
-    "angular": "~1.5.8",
-    "angular-animate": "~1.5.8",
-    "angular-aria": "~1.5.8"
   }
 }
