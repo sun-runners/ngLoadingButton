@@ -37,15 +37,7 @@ Copy-paste the stylesheet ```<script>``` into your ```<body>``` and ```<link>```
 ```
 or
 ```
-<script src=".bower_components/ng-loading-button/ngLoadingButton.min.js"></script>
-```
-or
-```
-<script src="https://cdn.rawgit.com/KimSunWook/ngLoadingButton/v1.1.2/ngLoadingButton.js"></script>
-```
-or
-```
-<script src="https://cdn.rawgit.com/KimSunWook/ngLoadingButton/v1.1.2/ngLoadingButton.min.js"></script>
+<script src="https://cdn.rawgit.com/KimSunWook/ngLoadingButton/v1.1.3/ngLoadingButton.js"></script>
 ```
 
 <br/>

@@ -38,5 +38,5 @@
         restrict: 'EA',
         template: require("html-loader!./template.html")
       };
-    });
-}])(angular);
+    }]);
+  })(angular);
