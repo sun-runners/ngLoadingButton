@@ -41,11 +41,11 @@ or
 ```
 or
 ```
-<script src="https://cdn.rawgit.com/KimSunWook/ngLoadingButton/v1.0.5/ngLoadingButton.js"></script>
+<script src="https://cdn.rawgit.com/KimSunWook/ngLoadingButton/v1.1.2/ngLoadingButton.js"></script>
 ```
 or
 ```
-<script src="https://cdn.rawgit.com/KimSunWook/ngLoadingButton/v1.0.5/ngLoadingButton.min.js"></script>
+<script src="https://cdn.rawgit.com/KimSunWook/ngLoadingButton/v1.1.2/ngLoadingButton.min.js"></script>
 ```
 
 <br/>

@@ -7,7 +7,7 @@
   	}
   };
   angular.module('ngLoadingButton', ['ng'])
-    .directive('ngLoadingButton', function($interval) {
+    .directive('ngLoadingButton', ['$interval', function($interval) {
       return {
         link: function(scope, element, attrs) {
           scope.id = 'ngLoadingButton_'+ngLoadingButtonUID.getNew();
@@ -39,4 +39,4 @@
         template: require("html-loader!./template.html")
       };
     });
-})(angular);
+}])(angular);
